@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/jannikarlsson/who-is-in/issues"
   },
-  "homepage": "https://github.com/jannikarlsson/who-is-in#readme"
+  "homepage": "https://github.com/jannikarlsson/who-is-in#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.6"
+  }
 }
