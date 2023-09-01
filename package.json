@@ -1,0 +1,19 @@
+{
+  "name": "who-is-in",
+  "version": "1.0.0",
+  "description": "Application to manage office presence",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jannikarlsson/who-is-in.git"
+  },
+  "author": "Janni Karlsson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jannikarlsson/who-is-in/issues"
+  },
+  "homepage": "https://github.com/jannikarlsson/who-is-in#readme"
+}
