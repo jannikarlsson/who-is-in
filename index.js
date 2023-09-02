@@ -13,7 +13,6 @@ const logRoute = require('./routes/log');
 app.use('/api/users', usersRoute);
 app.use('/api/log', logRoute);
 
-// Start the server
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
