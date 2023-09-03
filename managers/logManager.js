@@ -1,4 +1,4 @@
-const db = require('../database.js');
+const { db } = require('../database.js');
 const { handleServerError } = require('./errorHandler.js')
 
 const {convertRowToBoolean, convertBooleanToRow, convertSingleFromRowToBoolean} = require('../functions');

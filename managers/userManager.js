@@ -1,18 +1,8 @@
 const bcrypt = require('bcrypt');
 
-const db = require('../database.js');
+const { db, createUser } = require('../database.js');
 
 const { handleServerError } = require('./errorHandler.js')
-
-function getAllUsers(req, res) {
-    return db.all('SELECT * FROM users', (err, rows) => {
-        if (err) {
-          return handleServerError(res, err);
-        }
-        
-        res.json({ users: rows });
-      });
-}
 
 function loginUser(req, res) {
     const { username, password } = req.body;
@@ -44,4 +34,8 @@ function loginUser(req, res) {
   });
 }
 
-module.exports = { getAllUsers, loginUser };
+function createNewUser(req, res) {
+  return createUser(db, req.body);
+}
+
+module.exports = { loginUser, createNewUser };
